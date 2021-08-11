@@ -3,25 +3,23 @@ html, body {
     margin: 0;
     padding: 0;
 }
-h1{
-    color: #ff3b3f;
-}
+/*this controls the color and size of the header section */
 header{
     background-color:#a9a9a9;
     overflow: hidden;
     margin: 0;
     width: auto;
 }
-header h1, header h3{
-    
+/*I've created this class to control the size and font of the text throughout the page*/
+.my-text{
+    font-family:Arial, sans-serif;
+    font-size:15px;
 }
-
+/*this take away the underline of the links*/
 a{
 text-decoration: none;
 }
-a:hover {
-    color: red;
-}
+/*this class allows me to center whatever i want on the page*/
 .center-this{
     text-align:center;
 } 
@@ -30,22 +28,44 @@ main {
     
     
 }
+/*this makes whatever text i add this class to dark and read-able*/
 .dark-text{
     color: #1f1e1d;
 }
-.highlighted{
-    background-color: #caebf2;
+
+/*this adds a red hover affect to the links */
+a:hover{
+    color:#ff3b3f;
 }
-.center-this span {
-background-color: #caebf2;
-}
-ul{
-    color: #ff3b3f;
-}
+/*these control the red bullet of my links*/
+ul {
+    list-style: none;
+  }
+  
+  ul li::before {
+    content: "\2022"; 
+    color: red;
+    font-weight: bold;
+    display: inline-block; 
+    width: 20px; 
+    
+  }  
+/*this controls the dotted lines i have in the webpage*/
 hr{
     border-top: dotted 4px;
     color: #ff3b3f;
 }
+/*this controls my footer section, creating the color and sizing*/
 footer{
     background-color:#1f1e1d;
+    overflow: hidden;
+    margin: 0px;
+    width: auto;
+    height: auto;
+}
+/*this centers my skateboard image*/
+.center-image{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
 }
