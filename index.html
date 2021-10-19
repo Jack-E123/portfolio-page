@@ -1,75 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width" />
     <title>Portfolio Webpage</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!--this displayes my name and title-->
-        <header class="center-this" >
-            <h1 class="dark-text">Jack Emberton</h1>
-            <h2 class="dark-text">Web Dev</h2>
-        </header>
-    
+    <header class="center-this">
+      <h1 class="dark-text">Jack Emberton</h1>
+      <h2 class="dark-text">Web Dev</h2>
+    </header>
 
-    
-        <!--this contains the majority of the info on the page. including the about me and contact sections-->
-        <main class="dark-text">
-            
-            <section class="center-this">
-            <h2 class="center-this">Hi, I'm Jack Emberton</h2>
-                <p class="my-text">I'm a 23 year old software developer from Kentucky who is very excited to be a part of this field.</p>
-                
-            </section>
-            
-            <!--here i've added an image of a skateboarder in the air-->
-            <img src="https://communityimpact.com/uploads/images/2020/06/19/64027.jpeg" width="750" alt="skateboarder" class="center-image">
-                <hr>
-    
-            <!--the about me section with a small blurb about me-->
-            <h2 class="center-this">About Me</h2>
-            <div class="my-text">
-                <span >I'm a Software Developer with over 2 weeks of experience.</span>
-                <span >I may be new, but I've found something I'm really excited about. I've always been interested in computers and technology. I love creating things from scratch and solving problems, so web development seemed like the obvious choice.</span>
-                <span >They say if you love what you do you'll never work a day in your life and so far that has rung true. I'm eager to work with a team on new and interesting projects.</span>
-                <span >I enjoy many things along side software development also. These are some of them:</span>
-                <ol class="center-this ol-center">
-                    <li class="my-text">I love skateboarding</li>
-                    <li class="my-text">I love drawing and painting</li>
-                    <li class="my-text">I love playing video games with friends</li>
-                </ol>
+    <!--this contains the majority of the info on the page. including the about me and contact sections-->
+    <main class="dark-text">
+      <section class="center-this">
+        <h2 class="center-this">Hi, I'm Jack Emberton</h2>
+        <p class="my-text">
+          I'm a 23 year old software developer from Kentucky who is very excited
+          to be a part of this field.
+        </p>
+      </section>
 
-                <span >Please reach out if you are looking to hire a new developer.
-                </span>
-            </div>  
-            
-            <hr>
-                <!--this section contains links with how to contact me-->
-            <h2 class="center-this">Contact Me</h2>
-                <ul class="my-text">
-                    <li><a href="https://www.linkedin.com/in/jack-emberton-b64748219/" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://github.com/Jack-E123" target="_blank">GitHub</a></li>
-                    <li><a href="mailto:00jack.emberton@gmail.com" target="_blank">Email</a></li>
-                </ul>
-        </main>
-    
+      <!--here i've added an image of a skateboarder in the air-->
+      <img
+        src="https://communityimpact.com/uploads/images/2020/06/19/64027.jpeg"
+        width="750"
+        alt="skateboarder"
+        class="center-image"
+      />
+      <hr />
+
+      <!--the about me section with a small blurb about me-->
+      <h2 class="center-this">About Me</h2>
+      <div class="my-text">
+        <span>I'm a Software Developer with over 2 weeks of experience.</span>
+        <span
+          >I may be new, but I've found something I'm really excited about. I've
+          always been interested in computers and technology. I love creating
+          things from scratch and solving problems, so web development seemed
+          like the obvious choice.</span
+        >
+        <span
+          >They say if you love what you do you'll never work a day in your life
+          and so far that has rung true. I'm eager to work with a team on new
+          and interesting projects.</span
+        >
+        <span
+          >I enjoy many things along side software development also. These are
+          some of them:</span
+        >
+        <ol class="center-this ol-center">
+          <li class="my-text">I love skateboarding</li>
+          <li class="my-text">I love drawing and painting</li>
+          <li class="my-text">I love playing video games with friends</li>
+        </ol>
+
+        <span
+          >Please reach out if you are looking to hire a new developer.
+        </span>
+      </div>
+
+      <hr />
+      <!--this section contains links with how to contact me-->
+      <h2 class="center-this">Contact Me</h2>
+      <ul class="my-text">
+        <li>
+          <a
+            href="https://www.linkedin.com/in/jack-emberton-b64748219/"
+            target="_blank"
+            >LinkedIn</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/Jack-E123" target="_blank">GitHub</a>
+        </li>
+        <li>
+          <a href="mailto:00jack.emberton@gmail.com" target="_blank">Email</a>
+        </li>
+      </ul>
+      <div class="message-form">
+        <form action="https://formspree.io/f/xoqyzdpb" method="post">
+          <fieldset>
+            <legend>Message me!</legend>
+            <div class="name-input">
+              <label for="name">Your name</label>
+              <input
+                type="text"
+                name="name"
+                id="user-name"
+                placeholder="First-Name Last-Name"
+              />
+            </div>
+            <div class="email-input">
+              <label for="email">Your email</label>
+              <input
+                type="text"
+                name="email"
+                id="user-email"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div class="message-input">
+              <label for="massage">Your message</label>
+              <textarea
+                name="message"
+                id="user-message"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+            <div class="button">
+              <button type="submit">Submit</button>
+              <button type="reset">Reset</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </main>
 
     <div>
-        <footer>
-            <h3 class="center-this dark-text">....</h3>
-        </footer>
+      <footer>
+        <h3 class="center-this dark-text">....</h3>
+      </footer>
     </div>
-
-
-
-
-</body>
-
+  </body>
 </html>

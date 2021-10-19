@@ -1,75 +1,103 @@
-html, body {
-    background-color: #efefef;
-    margin: 0;
-    padding: 0;
+html,
+body {
+  background-color: #efefef;
+  margin: 0;
+  padding: 0;
 }
 /*this controls the color and size of the header section */
-header{
-    background-color:#a9a9a9;
-    overflow: hidden;
-    margin: 0;
-    width: auto;
+header {
+  background-color: #a9a9a9;
+  overflow: hidden;
+  margin: 0;
+  width: auto;
 }
 /*I've created this class to control the size and font of the text throughout the page*/
-.my-text{
-    font-family:Arial, sans-serif;
-    font-size:15px;
+.my-text {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
 }
 /*this take away the underline of the links*/
-a{
-text-decoration: none;
+a {
+  text-decoration: none;
 }
 /*this class allows me to center whatever i want on the page*/
-.center-this{
-    text-align:center;
-} 
+.center-this {
+  text-align: center;
+}
 main {
-    padding: 100px;
-    
-    
+  padding: 100px;
 }
 /*this makes whatever text i add this class to dark and read-able*/
-.dark-text{
-    color: #1f1e1d;
+.dark-text {
+  color: #1f1e1d;
 }
 
 /*this adds a red hover affect to the links */
-a:hover{
-    color:#ff3b3f;
+a:hover {
+  color: #ff3b3f;
 }
 /*these control the red bullet of my links*/
 ul {
-    list-style: none;
-  }
-  
-  ul li::before {
-    content: "\2022"; 
-    color: red;
-    font-weight: bold;
-    display: inline-block; 
-    width: 20px; 
-    
-  } 
-.ol-center{
-    text-align:center;
-    list-style-position:inside;
+  list-style: none;
+}
+
+ul li::before {
+  content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+  width: 20px;
+}
+.ol-center {
+  text-align: center;
+  list-style-position: inside;
 }
 /*this controls the dotted lines i have in the webpage*/
-hr{
-    border-top: dotted 4px;
-    color: #ff3b3f;
+hr {
+  border-top: dotted 4px;
+  color: #ff3b3f;
 }
 /*this controls my footer section, creating the color and sizing*/
-footer{
-    background-color:#1f1e1d;
-    overflow: hidden;
-    margin: 0px;
-    width: auto;
-    height: auto;
+footer {
+  background-color: #1f1e1d;
+  overflow: hidden;
+  margin: 0px;
+  width: auto;
+  height: auto;
 }
 /*this centers my skateboard image*/
-.center-image{
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
+.center-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.message-form {
+  display: flex;
+  flex-direction: column;
+}
+.name-input {
+  display: flex;
+  flex-direction: row;
+}
+.name-input label {
+  margin: 0 38px 0 0;
+}
+.email-input {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0 0 0;
+}
+.email-input label {
+  margin: 0 38px 0 0;
+}
+.message-input {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0 0 0;
+}
+.message-input label {
+  margin: 0 20px 0 0;
+}
+.button {
+  margin: 10px 0 0 0;
 }
